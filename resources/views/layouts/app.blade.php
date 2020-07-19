@@ -11,8 +11,15 @@
 <body>
     @include('include.navbar')
     <div class="container">
+        @include('include/messages')
         @yield('content')
     </div>
+
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'ckeditor' );
+    </script>
+</body>
 </body>
 
 </html>
